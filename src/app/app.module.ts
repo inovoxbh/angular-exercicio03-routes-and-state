@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
+import { FilterDropdownComponent } from './filter-dropdown/filter-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MovieComponent,
-    MoviesComponent
+    MoviesComponent,
+    FilterDropdownComponent
   ],
   imports: [
     BrowserModule,
