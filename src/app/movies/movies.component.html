@@ -1,0 +1,6 @@
+<div class="card-group">
+    <!-- *ngFor define um loop no array movies retornando cada item dentro da variável movie -->
+    <!-- [movie] representa o nome parâmetro de entrada do componente movie que será exibido -->
+    <!-- "movie" representa a variável que está sendo preenchida à cada iteração do loop do array -->
+    <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+</div>
