@@ -1,0 +1,21 @@
+<div class="toolbar" role="banner">
+    <app-header></app-header>
+  
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search Movie"
+          aria-label="Search"
+          [(ngModel)]="moviesFilter"
+          (ngModelChange)="onMoviesFilter($event)"
+          name="moviesFilter">
+      </form>
+     </nav>  
+  
+    <app-filter-dropdown></app-filter-dropdown>
+    
+    <!-- exibe a listagem de filmes passando o parâmetro de entrada [movies] que contém o array de filmes que foram retornados pela API externa e que está armazenado na store -->
+    <app-movies [movies]="moviesStore.movies$"></app-movies>
+  </div>
+  

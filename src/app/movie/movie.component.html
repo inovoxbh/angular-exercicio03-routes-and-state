@@ -4,6 +4,6 @@
     <img [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2' + movie.poster_path" alt="">
   </figure>
 
-  <!-- exibe o título do filme conforme propriedade title do parâmetro movie recebido pelo componente. -->
-  <h3>{{movie.title}}</h3>
+  <!-- link para exibição dos detalhes do filme -->
+  <a [routerLink]="['/movie', movie.id]">{{movie.title}}</a>
 </div>

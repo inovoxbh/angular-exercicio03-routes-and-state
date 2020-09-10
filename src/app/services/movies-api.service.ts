@@ -42,4 +42,9 @@ export class MoviesApiService {
     return this.http.get<IMoviesResult>(withBaseUrl('movie/popular'));
   }
 
+  // método que irá buscar os detalhes de um filme específico
+  getMovieDetails(id: string): Observable<any> {
+    // busca os detalhes de um filem, retornando um tipo qualquer.
+    return this.http.get<any>(withBaseUrl(`movie/${id}`));
+  }
 }
